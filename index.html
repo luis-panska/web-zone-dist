@@ -1,44 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie-edge">
-        <title>ZONE DIZ</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/estilo.css">
-    </head>
-    <body>
-        
-        <header class="encabezado">
-            <div class="contenido-navegacion">
-                <div class="logo">
-                    <h2>Zone<span>Dist</span></h2>
-                </div>
-                <nav class="navegacion ocultar">
-                    <a href="#">Inicio</a>
-                    <a href="#">Nosotros</a>
-                    <a href="#">Servicio</a>
-                    <a href="#">Contacto</a>
-                </nav>
-                <div class="hamburguesa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <title>ZONE DIZ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="contenido-navegacion">
+        <div class="logo">
+          <h2>Zone<span>Dist</span></h2>
+        </div>
+        <nav class="navegacion ocultar">
+          <a href="#">Inicio</a>
+          <a href="#">Nosotros</a>
+          <a href="#">Servicio</a>
+          <a href="#">Contacto</a>
+        </nav>
+        <!-- <div class="hamburguesa">
                     <span></span><span></span><span></span>
-                </div>
-            </div>
+                </div> -->
+      </div>
 
-            <div class="contenido-encabezado">
-                <div class="texto-encabezado">
-                    <h1>Si tienes Zone Dist,tienes todo.</h1>
+      <div class="contenido-encabezado">
+        <div class="texto-encabezado">
+          <h1>Si tienes Zone Dist,tienes todo.</h1>
+        </div>
+        <form class="formulario-encabezado">
+          <h2>Tu delivery lo llevamos volando</h2>
+        </form>
+      </div>
 
-                </div>
-                <form class="formulario-encabezado">
-                    <h2>Tu delivery lo llevamos volando</h2>
-                </form>
-            </div>
-        </header>
-        <script src="js/app.js"></script>
-    </body>
+      <section class="films">
+        <article class="films-film">
+          <div class="film__wrapper">
+            <video
+              class=""
+              muted=""
+              loop=""
+              autoplay=""
+              playsinline=""
+              poster="https://res.cloudinary.com/cloudinary-marketing/image/upload/f_auto,q_auto/v1648092958/Developer_Experience_hero_poster"
+            >
+              <source
+                type="video/mp4"
+                src="https://cloudinary-res.cloudinary.com/video/upload/f_auto:video,q_auto/v1601900814/website/refresh/dx/Developer_Experience_hero_v2.mp4"
+              />
+            </video>
+          </div>
+        </article>
+        <article class="films-film">
+          <div class="film__wrapper">
+            <video
+              class=""
+              muted=""
+              loop=""
+              autoplay=""
+              playsinline=""
+              poster="https://res.cloudinary.com/cloudinary-marketing/image/upload/f_auto,q_auto/v1648092958/Developer_Experience_hero_poster"
+            >
+              <source
+                type="video/mp4"
+                src="https://cloudinary-res.cloudinary.com/video/upload/f_auto:video,q_auto/v1601900814/website/refresh/dx/Developer_Experience_hero_v2.mp4"
+              />
+            </video>
+          </div>
+        </article>
+      </section>
+    </header>
+    <script src="js/app.js"></script>
+  </body>
 </html>
