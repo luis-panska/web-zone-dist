@@ -35,7 +35,7 @@ p.a {
 .encabezado {
   background-color: orangered; /*logo fondo*/
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
   min-height: 70rem;
   background-size: cover;
   background-position: center center;
@@ -119,27 +119,67 @@ p.a {
 .films {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .films-film {
-  flex-basis: 48%;
+  flex-basis: 100%;
+  padding: 20px;
+}
+.film__title {
+  text-align: center;
+}
+.film__title h3 {
+  color: white;
+  font-size: 32px;
 }
 
 .film__wrapper {
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .film__wrapper video {
-  max-width: 100%;
+  width: 80%;
+}
+
+.films-film-mobile {
+  flex-basis: 100%;
+  padding: 20px;
+}
+.films-film-mobile .film__wrapper video {
+  width: 40%;
+}
+.apk {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+.apk a {
+  border: 1px solid orangered;
+  text-decoration: none;
+  outline: none;
+  font-size: 22px;
+  padding: 10px 15px;
+  color: orangered;
+  background-color: white;
+  cursor: pointer;
+  font-family: var(--titulos);
+}
+
+.apk a:hover {
+  color: white;
+  background-color: orangered;
+  border: 1px solid white;
 }
 
 @media screen and (max-width: 768px) {
-  .films-film {
-    flex-basis: 100%;
+  .film__wrapper video {
+    width: 100%;
   }
 }
